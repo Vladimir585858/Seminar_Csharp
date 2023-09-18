@@ -8,7 +8,7 @@ int number = int.Parse(Console.ReadLine());
 
 if (number>=100&&number<999)
 {
-    Console.WriteLine("result is"+ number % 10);
+    Console.WriteLine("result is"+ (number % 10));
 }
 else 
 {
