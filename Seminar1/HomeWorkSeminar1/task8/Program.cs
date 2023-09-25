@@ -5,11 +5,11 @@
 
 
 Console.Write("Введите число N: ");
-        int N = int.Parse(Console.ReadLine()); 
+        int Num = int.Parse(Console.ReadLine()); 
 
-        Console.WriteLine($"Четные числа от 1 до   {N} :" );
+        Console.WriteLine($"Четные числа от 1 до   {Num} :" );
         
-        for (int i = 2; i <= N; i += 2)
+        for (int i = 2; i <= Num; i += 2)
         {
             Console.WriteLine(i);
         }  
