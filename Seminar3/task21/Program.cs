@@ -35,3 +35,6 @@ int y1 = InputAndCheck("enter y1");
 int x2 = InputAndCheck("enter x2");
 int y2 = InputAndCheck("enter y2");
 Distance(x1, y1, x2, y2);
+
+
+
