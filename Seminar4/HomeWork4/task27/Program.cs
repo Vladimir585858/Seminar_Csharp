@@ -6,13 +6,13 @@
 
 Console.WriteLine("Введите число :");
 int number = int.Parse(Console.ReadLine());
-int sumDigit = number;
- int sum = 0;
-    while (sumDigit != 0)
+int digits = number;
+ int SumDigit = 0;
+    while  (digits != 0)
     {
-        int digit = sumDigit % 10;
-        sum += digit;
-        sumDigit /= 10;
+        int digit = digits % 10;
+        SumDigit += digit;
+        digits /= 10;
     }
     
-Console.WriteLine($"сумма цифр введенного числа: {sum}");
+Console.WriteLine($"сумма цифр введенного числа: {SumDigit}");
