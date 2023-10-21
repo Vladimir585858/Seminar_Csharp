@@ -4,19 +4,21 @@
 
 
 const uint m = 3;
-const uint n = 3;
+const uint n = 2;
 
-uint result = AckermannFunction (m,n);
+uint result = AckermannFunction (n,m);
 Console.WriteLine($"Результат вычесления функции Аккермана: {result}\t");
 
 
- static uint AckermannFunction(uint m, uint n)
+ static uint AckermannFunction(uint n, uint m)
     {
-        if (m == 0)
-            return n + 1;
-        
         if (n == 0)
-            return AckermannFunction(m - 1, 1);
-        
-        return AckermannFunction(m - 1, AckermannFunction(m, n - 1));
+        {
+            return m + 1;
+        }
+        if (m == 0)
+        {
+            return AckermannFunction(n - 1, 1);
+        }
+        return AckermannFunction(n - 1, AckermannFunction(n, m - 1));
     }
